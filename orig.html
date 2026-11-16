@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bryant Park Hub</title>
+  <meta name="description" content="Neighbors near Bryant Park in Seattle preparing to help each other after a major disaster.">
+
+  <!-- How the page looks when the link is shared in a text or email -->
+  <meta property="og:title" content="Bryant Park Hub">
+  <meta property="og:description" content="No power. No phones. One place to go: Bryant Park.">
+  <meta property="og:image" content="https://bryantparkhub.org/images/bryant-park.jpg">
+  <meta property="og:url" content="https://bryantparkhub.org/">
+
+  <style>
+    :root {
+      --ink: #1f2a24;
+      --muted: #55615a;
+      --paper: #fbfaf6;
+      --green: #2f6b45;
+      --banner-bg: #1f2a24;
+      --banner-accent: #ffc94d;
+      --card: #ffffff;
+      --line: #e3e0d6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 18px;
+      line-height: 1.55;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+    /* Banner */
+    .banner {
+      background: var(--banner-bg);
+      color: #fff;
+      text-align: center;
+      padding: 28px 20px 30px;
+    }
+    .banner .name {
+      font-size: 15px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin: 0 0 10px;
+    }
+    .banner h1 {
+      margin: 0;
+      font-size: clamp(26px, 6vw, 40px);
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+    .banner h1 .place { color: var(--banner-accent); display: block; }
+
+    section { padding: 34px 0 6px; }
+    h2 {
+      font-size: 22px;
+      margin: 0 0 14px;
+      color: var(--green);
+    }
+
+    /* Events calendar */
+    .calendar {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .calendar iframe { display: block; width: 100%; height: 420px; border: 0; }
+
+    /* Picture */
+    .picture { margin: 34px 0 0; }
+    .picture img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Get involved */
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      background: var(--green);
+      color: #fff;
+    }
+    .button.disabled {
+      background: #c9cec9;
+      color: #4b524d;
+      cursor: default;
+    }
+    a { color: var(--green); }
+
+    footer {
+      margin-top: 44px;
+      padding: 24px 0 40px;
+      border-top: 1px solid var(--line);
+      font-size: 15px;
+      color: var(--muted);
+    }
+    footer p { margin: 6px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== BANNER (edit text here) ===================== -->
+  <header class="banner">
+    <p class="name">Bryant Park Hub</p>
+    <h1>NO POWER. NO PHONES.<span class="place">ONE PLACE TO GO: BRYANT PARK.</span></h1>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ===================== UPCOMING EVENTS ===================== -->
+    <!-- PLACEHOLDER: this shows Google's public US Holidays calendar.
+         Swap the src="..." below for our own calendar's embed link later. -->
+    <section>
+      <h2>Upcoming events</h2>
+      <div class="calendar">
+        <iframe
+          title="Upcoming events"
+          src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FLos_Angeles&mode=AGENDA&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0"
+          loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- ===================== PICTURE ===================== -->
+    <figure class="picture">
+      <img src="images/bryant-park.jpg" width="1536" height="510"
+           alt="A crayon drawing of neighbors of all ages holding hands on the grass at Bryant Park, with the playground and a park sign behind them.">
+    </figure>
+
+    <!-- ===================== WHO WE ARE (edit text here) ===================== -->
+    <section>
+      <h2>Who we are</h2>
+      <p>After a major disaster, the first help usually comes from the people next door. The Bryant Park Hub is a group of neighbors getting ready now (learning skills, making plans, and getting to know each other) so that when power and phones are down, we can gather at Bryant Park and look after one another.</p>
+    </section>
+
+    <!-- ===================== GET INVOLVED ===================== -->
+    <section>
+      <h2>Get involved</h2>
+      <p>Come to an event, or get in touch. We'd love to meet you.</p>
+      <div class="actions">
+        <!-- PLACEHOLDER: replace with the real signup form link later -->
+        <span class="button disabled" aria-disabled="true">Mailing list signup (coming soon)</span>
+        <!-- PLACEHOLDER email: replace later -->
+        <a class="button" href="mailto:MichellesHubby@bryantparkhub.org">Email us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="wrap">
+      <p>An affiliate of <a href="https://seattleemergencyhubs.org/">Seattle Emergency Hubs</a>.</p>
+      <p>We're volunteers, not an emergency service. In an emergency, call 911.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
